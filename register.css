@@ -1,0 +1,146 @@
+/* === REGISTER PAGE STYLE (Fixed Center) === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fffde7, #fff59d, #fff176);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f4c20d;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbar .nav-login {
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .nav-login:hover {
+  text-decoration: underline;
+}
+
+/* Container di tengah */
+.register-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Biar pas di tengah vertikal */
+  padding: 40px 20px;
+}
+
+/* Kartu form */
+.register-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(244, 194, 13, 0.4);
+  width: 400px;
+  padding: 40px 35px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+.register-card h2 {
+  color: #222;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Biar input sejajar di tengah */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  max-width: 320px; /* Batasi biar nggak kepanjangan */
+  padding: 12px;
+  border: 2px solid #f4c20d;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+input:focus {
+  border-color: #fdd835;
+  box-shadow: 0 0 6px rgba(244, 194, 13, 0.4);
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  background-color: #f4c20d;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fdd835;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Link */
+a {
+  color: #f4c20d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Error */
+.error {
+  color: #c62828;
+  background: #fff3e0;
+  border: 1px solid #ef9a9a;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
